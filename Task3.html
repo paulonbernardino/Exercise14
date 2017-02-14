@@ -1,0 +1,360 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_349acb4570ca4316a7265d8f401272f8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_349acb4570ca4316a7265d8f401272f8" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_349acb4570ca4316a7265d8f401272f8 = L.map('map_349acb4570ca4316a7265d8f401272f8', {
+                                           center:[0,0],
+                                           zoom: 2,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_ebc425231c5f4b7fa71b680e96d58450 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Map tiles by <a href="http://www.mapbox.com/m">Mapbox</a> Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_349acb4570ca4316a7265d8f401272f8);
+
+        
+        
+            
+
+            var marker_5437a342fe1242078dae7ee8b2990657 = L.marker(
+                [-40.9005,174.8859],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_349acb4570ca4316a7265d8f401272f8);
+            
+        
+            
+            var popup_315d329301614967a60739ad6528eb3c = L.popup({maxWidth: '300'});
+
+            
+                var html_33da516882874120b746e1b8a0d23c5c = $('         <div id="html_33da516882874120b746e1b8a0d23c5c"                 style="width: 100.0%; height: 100.0%;">                 New Zeland</div>                 ')[0];
+                popup_315d329301614967a60739ad6528eb3c.setContent(html_33da516882874120b746e1b8a0d23c5c);
+            
+
+            marker_5437a342fe1242078dae7ee8b2990657.bindPopup(popup_315d329301614967a60739ad6528eb3c);
+
+            
+        
+        
+            
+
+            var marker_4944802dac9e4c70ba682f610bd86f3a = L.marker(
+                [51.5073,-0.1277],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_349acb4570ca4316a7265d8f401272f8);
+            
+        
+            
+            var popup_dfdcea16669a41da90ed9b40400e4bd8 = L.popup({maxWidth: '300'});
+
+            
+                var html_4476b823c2924e02a39c418be7250483 = $('         <div id="html_4476b823c2924e02a39c418be7250483"                 style="width: 100.0%; height: 100.0%;">                 London</div>                 ')[0];
+                popup_dfdcea16669a41da90ed9b40400e4bd8.setContent(html_4476b823c2924e02a39c418be7250483);
+            
+
+            marker_4944802dac9e4c70ba682f610bd86f3a.bindPopup(popup_dfdcea16669a41da90ed9b40400e4bd8);
+
+            
+        
+        
+            
+
+            var marker_8d3ad90f17c248188e7ecb98ab143e39 = L.marker(
+                [56.8796,24.6031],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_349acb4570ca4316a7265d8f401272f8);
+            
+        
+            
+            var popup_bd44efe404624ccaa82a63523ac50e09 = L.popup({maxWidth: '300'});
+
+            
+                var html_470ba0a5520c4e21a6018761956eb364 = $('         <div id="html_470ba0a5520c4e21a6018761956eb364"                 style="width: 100.0%; height: 100.0%;">                 Latvia</div>                 ')[0];
+                popup_bd44efe404624ccaa82a63523ac50e09.setContent(html_470ba0a5520c4e21a6018761956eb364);
+            
+
+            marker_8d3ad90f17c248188e7ecb98ab143e39.bindPopup(popup_bd44efe404624ccaa82a63523ac50e09);
+
+            
+        
+        
+            
+
+            var marker_7ff35174514544b88dd01f052d442b43 = L.marker(
+                [51.0576,-1.308],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_349acb4570ca4316a7265d8f401272f8);
+            
+        
+            
+            var popup_489d66112b0b42648313a3115dbb4230 = L.popup({maxWidth: '300'});
+
+            
+                var html_2352d5ec577540e4b53b64fd8c1155f7 = $('         <div id="html_2352d5ec577540e4b53b64fd8c1155f7"                 style="width: 100.0%; height: 100.0%;">                 Hampshire</div>                 ')[0];
+                popup_489d66112b0b42648313a3115dbb4230.setContent(html_2352d5ec577540e4b53b64fd8c1155f7);
+            
+
+            marker_7ff35174514544b88dd01f052d442b43.bindPopup(popup_489d66112b0b42648313a3115dbb4230);
+
+            
+        
+        
+            
+
+            var marker_816eedf6eca74831948ff31261dc8de7 = L.marker(
+                [-27.4697,153.0251],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_349acb4570ca4316a7265d8f401272f8);
+            
+        
+            
+            var popup_1d642fcc75a04c1695a89a462bd4ca02 = L.popup({maxWidth: '300'});
+
+            
+                var html_eaf163c187ee4d10938d539969da145e = $('         <div id="html_eaf163c187ee4d10938d539969da145e"                 style="width: 100.0%; height: 100.0%;">                 Brisbane</div>                 ')[0];
+                popup_1d642fcc75a04c1695a89a462bd4ca02.setContent(html_eaf163c187ee4d10938d539969da145e);
+            
+
+            marker_816eedf6eca74831948ff31261dc8de7.bindPopup(popup_1d642fcc75a04c1695a89a462bd4ca02);
+
+            
+        
+        
+            
+
+            var marker_bb8624ace93844c697cf95cc1a77e54f = L.marker(
+                [12.9715,77.5945],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_349acb4570ca4316a7265d8f401272f8);
+            
+        
+            
+            var popup_8a9bacf4498b453eac33fc3deb70736e = L.popup({maxWidth: '300'});
+
+            
+                var html_8d14da5100854c71bc0888000122b271 = $('         <div id="html_8d14da5100854c71bc0888000122b271"                 style="width: 100.0%; height: 100.0%;">                 Bengaluru</div>                 ')[0];
+                popup_8a9bacf4498b453eac33fc3deb70736e.setContent(html_8d14da5100854c71bc0888000122b271);
+            
+
+            marker_bb8624ace93844c697cf95cc1a77e54f.bindPopup(popup_8a9bacf4498b453eac33fc3deb70736e);
+
+            
+        
+        
+            
+
+            var marker_cc776d234d874ba6ae145490f374e537 = L.marker(
+                [35.7595,-79.0192],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_349acb4570ca4316a7265d8f401272f8);
+            
+        
+            
+            var popup_2285d9ad1ee04687a0d8bfd79408a4f0 = L.popup({maxWidth: '300'});
+
+            
+                var html_697e5dc6418041db93cee4d823eab2f1 = $('         <div id="html_697e5dc6418041db93cee4d823eab2f1"                 style="width: 100.0%; height: 100.0%;">                 North Carolina</div>                 ')[0];
+                popup_2285d9ad1ee04687a0d8bfd79408a4f0.setContent(html_697e5dc6418041db93cee4d823eab2f1);
+            
+
+            marker_cc776d234d874ba6ae145490f374e537.bindPopup(popup_2285d9ad1ee04687a0d8bfd79408a4f0);
+
+            
+        
+        
+            
+
+            var marker_948e48d15fd648f1baedb1aca6ab3bef = L.marker(
+                [44.3148,-85.6023],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_349acb4570ca4316a7265d8f401272f8);
+            
+        
+            
+            var popup_f08501d5b9054085a6b8ebe74e54ed65 = L.popup({maxWidth: '300'});
+
+            
+                var html_5e07d7eee9ce426aba12a5d92b6d0a32 = $('         <div id="html_5e07d7eee9ce426aba12a5d92b6d0a32"                 style="width: 100.0%; height: 100.0%;">                 Michigan</div>                 ')[0];
+                popup_f08501d5b9054085a6b8ebe74e54ed65.setContent(html_5e07d7eee9ce426aba12a5d92b6d0a32);
+            
+
+            marker_948e48d15fd648f1baedb1aca6ab3bef.bindPopup(popup_f08501d5b9054085a6b8ebe74e54ed65);
+
+            
+        
+        
+        
+        </script>
+        
